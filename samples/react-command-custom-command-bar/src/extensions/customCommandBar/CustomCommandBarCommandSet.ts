@@ -32,6 +32,7 @@ export default class CustomCommandBarCommandSet
   @override
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, 'Initialized CustomCommandBarCommandSet');
+    this.context.pageContext.listItem
     return Promise.resolve<void>();
   }
 
